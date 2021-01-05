@@ -47,11 +47,11 @@ docker container cp build_builder_1:/usr/local/lib cardano-bins/
 ```bash
 scp cardano-bins/bin/cardano-node node-server:/usr/local/bin/
 scp cardano-bins/bin/cardano-cli node-server:/usr/local/bin/
-scp cardano-bins/lib/libsodium.so node-server:/usr/local/lib
+scp cardano-bins/lib/libsodium.so node-server:/usr/local/lib/
 ```
 
 ```bash
 scp cardano-bins/bin/cardano-node relay-server:/usr/local/bin/
 scp cardano-bins/bin/cardano-cli relay-server:/usr/local/bin/
-scp cardano-bins/lib/libsodium.so relay-server:/usr/local/lib
+scp cardano-bins/lib/libsodium.so relay-server:/usr/local/lib/
 ```
