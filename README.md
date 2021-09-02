@@ -1,6 +1,6 @@
 # README #
 
-This Docker build environment will compile ```cardano-node```, ```cardano-cli```, and ```libsodium``` binaries for Ubuntu 20.04, with reliable and predictable results. This setup will always build against the specified version of the binaries, you just need to change the desired version in ```Dockerfile``` and ```docker-compose.yml``` when needed.
+This Docker build environment will compile ```cardano-node```, ```cardano-cli```, and ```libsodium``` binaries for Ubuntu 20.04 LTS, with reliable and predictable results. This setup will always build against the specified version of the binaries, you just need to change the desired version in ```Dockerfile``` and ```docker-compose.yml``` when needed.
 
 **You must run these steps to compile ```cardano-node```, ```cardano-cli```, and ```libsodium``` on your local computer. Then ```scp``` them over to your servers after successful compilation. It is still necessary and up to you to run ```ldconfig``` against ```libsodium.so``` on the servers (see files/libsodium.conf).**
 
@@ -10,7 +10,7 @@ This Docker build environment will compile ```cardano-node```, ```cardano-cli```
 
 **macOS/Windows**: Install and run Docker Desktop, for your OS from [the official site](https://www.docker.com/products/docker-desktop), on your local computer.
 
-**Linux only**: use Docker directly, as Linux doesn't require Docker Desktop.
+**Linux**: use Docker directly. Linux doesn't require Docker Desktop.
 
 ### Clone the build repo ###
 

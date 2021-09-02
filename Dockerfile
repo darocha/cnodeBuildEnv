@@ -3,9 +3,9 @@ FROM ubuntu:20.04 AS cardano-builder
 
 # Change the Cardano Node version and git tag, and Cabal and GHC versions, here
 ENV CABAL_VERSION="3.4" \
-    GHC_VERSION="8.10.2" \
-    CARDANO_NODE_VERSION="1.27.0" \
-    CARDANO_NODE_GIT_TAG="1.27.0" \
+    GHC_VERSION="8.10.4" \
+    CARDANO_NODE_VERSION="1.29.0" \
+    CARDANO_NODE_GIT_TAG="1.29.0" \
     PATH="/opt/ghc/bin:/opt/cabal/bin:${PATH}" \
     LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH" \
     PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
